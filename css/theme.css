@@ -5,16 +5,102 @@
   font-style: normal;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #f8f9fa;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  
 }
 
 /* NAVBAR */
 
-.navbar {
+/* NAVBAR BASE */
+
+.custom-navbar {
+  /* background: rgba(0, 0, 0, 0.65); */
   backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+/* NAV LINKS */
+
+.nav-link {
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* UNDERLINE EFFECT */
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #0d6efd;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* TOGGLER */
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* HAMBURGER → X */
+
+.navbar-toggler.open .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+}
+
+.navbar-toggler.open .navbar-toggler-icon::before {
+  content: "✖";
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+/* ✅ FIXED MOBILE MENU */
+
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;              /* ✅ IMPORTANT FIX */
+    width: 100%;
+    background: #000;
+    padding: 15px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .navbar .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
 }
 
 /* HERO */
@@ -304,14 +390,108 @@ body {
 
 /* CONTACT */
 
-.contact a {
+/* CONTACT SECTION */
+
+.contact-section {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+/* CARD */
+
+.contact-card {
+  display: block;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
   text-decoration: none;
+  color: #000;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.contact-card i {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.contact-card h5 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: gray;
+}
+
+/* HOVER EFFECT */
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  color: #2563eb;
+}
+
+/* ICON COLOR CHANGE */
+
+.contact-card:hover i {
+  color: #0d6efd;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 25px;
+  }
 }
 
 /* FOOTER */
+/* FOOTER */
 
-footer {
+.footer {
   background: #0f172a;
-  color: white;
-  padding: 20px;
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer h5 {
+  font-weight: 600;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* SOCIAL ICONS */
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #0d6efd;
+  transform: translateY(-3px);
+}
+
+/* LINE */
+
+.footer hr {
+  border-color: rgba(255,255,255,0.1);
+  margin: 20px 0;
+}
+
+/* COPYRIGHT */
+
+.footer-copy {
+  font-size: 13px;
+  color: #aaa;
 }
