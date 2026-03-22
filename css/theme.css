@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+/* HERO */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.hero-buttons .btn {
+  margin: 10px;
+  padding: 12px 28px;
+  border-radius: 30px;
+}
+
+/* SOCIAL */
+
+.hero-social a {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+/* STATS */
+
+.stats {
+  background: white;
+  padding: 80px 0;
+}
+
+.stats h3 {
+  font-size: 40px;
+  color: #2563eb;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 80px 0;
+}
+
+.lead {
+  text-align: left;
+}
+
+/* PROJECT */
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.experience-item,
+.education-item {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-tech span {
+  background: #eef2ff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.exp-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  height: 100%;
+  position: relative;
+}
+
+.exp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exp-header h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.exp-badge {
+  background: #2563eb;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.company {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.duration {
+  font-size: 14px;
+  color: gray;
+}
+
+.exp-card ul {
+  padding-left: 18px;
+}
+
+.exp-card ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+
+/* Education  */
+
+/* TIMELINE BASE */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background: #2563eb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+/* ITEM */
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+/* ICON */
+
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  background: #2563eb;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+  left: -20px;
+}
+
+/* CONTENT */
+
+.timeline-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.timeline-content h5 {
+  margin-bottom: 5px;
+}
+
+.college {
+  font-size: 14px;
+  color: gray;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  /* Move line to left */
+  .timeline::after {
+    left: 20px;
+  }
+
+  /* Make all items full width */
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 60px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  /* Fix icon position */
+  .timeline-icon {
+    left: 0 !important;
+    right: auto;
+  }
+
+  /* Fix card alignment */
+  .timeline-content {
+    text-align: left;
+  }
+
+}
+
+
+
+
+/* SKILLS */
+
+.skills {
+  padding: 80px 0;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill {
+  padding: 10px 18px;
+  background: #eef2ff;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* EXPERIENCE */
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* CONTACT */
+
+.contact a {
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+}
