@@ -212,7 +212,7 @@ body {
 .about-item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .about-item i {
@@ -246,6 +246,7 @@ body {
 
   .about-glass {
     margin-top: 30px;
+    text-align: left;
   }
 }
 
@@ -546,10 +547,18 @@ body {
   padding: 80px 0;
 }
 
+.resume-btn{
+  border: none;
+}
+
+.resume-btn:hover{
+  background: #2563eb;
+  border: none;
+}
+
+
+
 /* CONTACT */
-
-/* CONTACT SECTION */
-
 .contact-section {
   background: #f8f9fa;
   padding: 80px 0;
