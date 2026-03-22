@@ -20,3 +20,13 @@ navbarCollapse.addEventListener('hidden.bs.collapse', () => {
   toggler.classList.remove('open');
 });
 
+// skills slider 
+function scrollSkills(direction) {
+  const track = document.querySelector(".skills-track");
+  const scrollAmount = 200;
+
+  track.parentElement.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
