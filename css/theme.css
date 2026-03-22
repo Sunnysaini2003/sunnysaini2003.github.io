@@ -14,7 +14,6 @@ body {
   background: #f8f9fa;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  
 }
 
 /* NAVBAR */
@@ -43,7 +42,7 @@ body {
 /* UNDERLINE EFFECT */
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -80,15 +79,14 @@ body {
   left: 0;
 }
 
-/* ✅ FIXED MOBILE MENU */
+/* FIXED MOBILE MENU */
 
 @media (max-width: 991px) {
-
   .navbar-collapse {
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;              /* ✅ IMPORTANT FIX */
+    right: 0;
     width: 100%;
     background: #000;
     padding: 15px;
@@ -100,7 +98,6 @@ body {
     padding-left: 12px;
     padding-right: 12px;
   }
-
 }
 
 /* HERO */
@@ -203,11 +200,11 @@ body {
 /* GLASS CARD */
 
 .about-glass {
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* ITEMS */
@@ -238,7 +235,6 @@ body {
 /* MOBILE */
 
 @media (max-width: 768px) {
-
   .about-title {
     font-size: 30px;
     text-align: center;
@@ -251,7 +247,6 @@ body {
   .about-glass {
     margin-top: 30px;
   }
-
 }
 
 /* PROJECT */
@@ -338,7 +333,6 @@ body {
   font-size: 14px;
 }
 
-
 /* Education  */
 
 /* TIMELINE BASE */
@@ -350,7 +344,7 @@ body {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 3px;
   background: #2563eb;
@@ -358,6 +352,7 @@ body {
   bottom: 0;
   left: 50%;
   margin-left: -1px;
+  z-index: -1;
 }
 
 /* ITEM */
@@ -393,6 +388,7 @@ body {
   z-index: 1;
 }
 
+
 .timeline-item:nth-child(even) .timeline-icon {
   left: -20px;
 }
@@ -403,13 +399,13 @@ body {
   background: white;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
 .timeline-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-content h5 {
@@ -424,7 +420,6 @@ body {
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-
   /* Move line to left */
   .timeline::after {
     left: 20px;
@@ -449,11 +444,7 @@ body {
   .timeline-content {
     text-align: left;
   }
-
 }
-
-
-
 
 /* SKILLS */
 
@@ -521,11 +512,11 @@ body {
 .skill-card {
   min-width: 140px;
   padding: 20px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
@@ -548,7 +539,6 @@ body {
 .skill-card:hover i {
   color: white;
 }
-
 
 /* EXPERIENCE */
 
@@ -574,7 +564,7 @@ body {
   border-radius: 15px;
   text-decoration: none;
   color: #000;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
   height: 100%;
 }
@@ -598,7 +588,7 @@ body {
 
 .contact-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   color: #2563eb;
 }
 
@@ -653,7 +643,7 @@ body {
 /* LINE */
 
 .footer hr {
-  border-color: rgba(255,255,255,0.1);
+  border-color: rgba(255, 255, 255, 0.1);
   margin: 20px 0;
 }
 
