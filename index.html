@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Sunny Saini | Portfolio</title>
+  <title>Sunny Saini | Full Stack MERN Developer</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
@@ -17,45 +20,43 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
     <div class="container">
 
       <a class="navbar-brand fw-bold" href="/">
-        <i class="fas fa-code"></i> Sunny Saini
+        <i class="fas fa-code me-1 text-primary-light"></i> Sunny Saini
       </a>
 
-      <!-- TOGGLER -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- MENU -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto text-center">
+        <ul class="navbar-nav ms-auto text-center align-items-lg-center gap-lg-2">
 
           <li class="nav-item">
-            <a class="nav-link" href="#about"><i class="bi bi-info-circle"></i> About</a>
+            <a class="nav-link" href="#about"><i class="bi bi-info-circle me-1"></i>About</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#projects"><i class="fa fa-laptop-code"></i> Projects</a>
+            <a class="nav-link" href="#projects"><i class="fa fa-laptop-code me-1"></i>Projects</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+            <a class="nav-link" href="#experience"><i class="fas fa-briefcase me-1"></i>Experience</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#education"><i class="bi bi-mortarboard"></i> Education</a>
+            <a class="nav-link" href="#education"><i class="bi bi-mortarboard me-1"></i>Education</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#skills"><i class="fa fa-code"></i> Skills</a>
+            <a class="nav-link" href="#skills"><i class="fa fa-code me-1"></i>Skills</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+            <a class="nav-link" href="#contact"><i class="fa fa-envelope me-1"></i>Contact</a>
           </li>
 
         </ul>
@@ -64,62 +65,69 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up" data-aos-duration="900">
+      <span class="hero-badge">Available for Full-Time & Freelance Roles</span>
       <h1>Sunny Saini</h1>
 
-      <p>
-        Full Stack MERN Developer
+      <p class="hero-subtitle">
+        Full Stack MERN Developer crafting fast, scalable web applications & custom CMS architectures.
       </p>
 
       <div class="hero-buttons">
-        <a href="#projects" class="btn btn-light">View Projects</a>
+        <a href="#projects" class="btn btn-light hero-btn-primary">
+          View Projects <i class="fas fa-arrow-right ms-2"></i>
+        </a>
 
-        <a href="/Resume_.pdf" class="btn btn-outline-light">
-          <i class="fa fa-download"></i> Resume
+        <a href="/Resume.pdf" class="btn btn-outline-light hero-btn-outline" download>
+          <i class="fa fa-download me-2"></i>Resume
         </a>
       </div>
 
       <div class="hero-social mt-4">
-        <a href="https://github.com/Sunnysaini2003" target="_blank"><i class="fab fa-github"></i></a>
-
-        <a href="https://linkedin.com/in/sunny-saini-0087b2301" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:sunnysaini.ldh@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-        <a href="https://wa.me/7986677845" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/Sunnysaini2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sunny-saini-0087b2301" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sunnysaini.ldh@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://wa.me/917986677845" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+            class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
   <section class="stats text-center">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>10+</h3>
-          <p>Projects Delivered</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="stat-box">
+            <h3>10+</h3>
+            <p>Projects Delivered</p>
+          </div>
         </div>
 
-        <div class="col-md-4">
-          <h3>8+</h3>
-          <p>Technologies</p>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="stat-box">
+            <h3>12+</h3>
+            <p>Core Technologies</p>
+          </div>
         </div>
 
-        <div class="col-md-4">
-          <h3>2+ Years</h3>
-          <p>Experience</p>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="stat-box">
+            <h3>2+ Years</h3>
+            <p>Hands-On Experience</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="about-premium">
     <div class="container" data-aos="fade-up">
 
-      <div class="row align-items-center">
+      <div class="row align-items-center g-5">
 
-        <!-- LEFT SIDE -->
         <div class="col-lg-6">
 
           <h2 class="about-title">
@@ -132,22 +140,27 @@
 
           <p class="about-text">
             I'm <strong>Sunny Saini</strong>, a passionate developer specializing in the
-            <strong>MERN Stack, WordPress, and Shopify</strong>. With over 2 years of experience, I have a proven track record of owning the full Software Development Life Cycle (SDLC) from requirements gathering to final deployment. 
+            <strong>MERN Stack, TypeScript, WordPress, and Shopify</strong>. With over 2 years of experience, I have a
+            proven track record of owning the full Software Development Life Cycle (SDLC) from requirements gathering to
+            final deployment.
           </p>
 
-          <p class="about-text">
-            Whether I am building secure JWT authentication systems, optimizing MySQL query latency, or creating custom CMS solutions that eliminate manual overhead, my goal is always to write clean, optimized code that drives real business impact.
+          <p class="about-text mb-0">
+            Whether I am building secure JWT authentication systems, optimizing MySQL query latency, or creating custom
+            CMS solutions that eliminate manual overhead, my goal is always to write clean, optimized code that drives
+            real business impact.
           </p>
 
         </div>
 
-        <!-- RIGHT SIDE -->
         <div class="col-lg-6">
 
           <div class="about-glass">
 
             <div class="about-item">
-              <i class="fas fa-code"></i>
+              <div class="about-icon-wrap">
+                <i class="fas fa-code"></i>
+              </div>
               <div>
                 <h6>Development</h6>
                 <p>Full Stack MERN & Custom CMS Architecture</p>
@@ -155,23 +168,29 @@
             </div>
 
             <div class="about-item">
-              <i class="fas fa-laptop"></i>
+              <div class="about-icon-wrap">
+                <i class="fas fa-laptop"></i>
+              </div>
               <div>
                 <h6>Frontend</h6>
-                <p>Reusable Components & Performance UI</p>
+                <p>React.js, TypeScript & Atomic UI Components</p>
               </div>
             </div>
 
             <div class="about-item">
-              <i class="fas fa-server"></i>
+              <div class="about-icon-wrap">
+                <i class="fas fa-server"></i>
+              </div>
               <div>
                 <h6>Backend</h6>
-                <p>REST APIs, JWT RBAC & Database Optimization</p>
+                <p>REST APIs, Socket.io, JWT RBAC & MySQL Tuning</p>
               </div>
             </div>
 
-            <div class="about-item">
-              <i class="fas fa-rocket"></i>
+            <div class="about-item mb-0">
+              <div class="about-icon-wrap">
+                <i class="fas fa-rocket"></i>
+              </div>
               <div>
                 <h6>Impact</h6>
                 <p>Delivered 10+ client domains to production</p>
@@ -187,81 +206,122 @@
     </div>
   </section>
 
-
-  <!-- PROJECTS -->
   <section id="projects" class="section-padding">
     <div class="container">
-      <h2 class="text-center mb-5">
-        <i class="fa fa-laptop-code"></i> Projects
-      </h2>
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <h2><i class="fa fa-laptop-code me-2 text-primary"></i>Featured Projects</h2>
+        <p class="text-muted">Full-stack platforms, real-time POS systems, and SaaS architectures</p>
+      </div>
 
       <div class="row g-4">
-        <div class="col-md-4" data-aos="zoom-in">
-            <a href="https://github.com/Sunnysaini2003/fintrack" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-          <div class="project-card">
-            <h4>FinTrack</h4>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <a href="https://github.com/Sunnysaini2003/QuickServe" target="_blank" rel="noopener noreferrer"
+            class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>QuickServe</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
 
-            <p>
-              Full-stack expense management platform featuring nested transaction tracking analytics, multi-currency charts, and cross-platform authentication architectures.
-            </p>
+              <p>
+                Real-time QR ordering and restaurant POS platform using Socket.io to synchronize live kitchen status
+                updates across customer, staff, and admin dashboards with sub-second latency.
+              </p>
 
-            <div class="project-tech">
-              <span>MERN</span>
-              <span>MySQL</span>
-              <span>MongoDB</span>
-              <span>Tailwind</span>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>TypeScript</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>Socket.io</span>
+              </div>
             </div>
-          </div>
           </a>
         </div>
 
-        <div class="col-md-4" data-aos="zoom-in">
-            <a href="https://github.com/Sunnysaini2003/Project-Management-System--PMS-" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-          <div class="project-card">
-            <h4>WorkSync</h4>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://github.com/Sunnysaini2003/fintrack" target="_blank" rel="noopener noreferrer"
+            class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>FinTrack</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
 
-            <p>
-              End-to-end enterprise workflow platform enabling interactive task assignment matrices, timeline metrics tracking, and granular team management RBAC filters.
-            </p>
+              <p>
+                Dual-database financial platform combining MySQL for ACID-compliant transactions and MongoDB for
+                analytics logging, with RBAC and interactive multi-axis expense dashboards.
+              </p>
 
-            <div class="project-tech">
-              <span>Node.js</span>
-              <span>Express</span>
-              <span>EJS</span>
-              <span>MySQL</span>
-              <span>Bootstrap</span>
+              <div class="project-tech">
+                <span>MERN</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>Tailwind CSS</span>
+              </div>
             </div>
-          </div>
-          </a>
-        </div>
-        
-        <div class="col-md-4" data-aos="zoom-in">
-            <a href="https://github.com/Sunnysaini2003/collabsphere-saas" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-          <div class="project-card">
-            <h4>CollabSphere</h4>
-
-            <p>
-             A scalable multi-tenant SaaS platform built using high-performance backend architecture with session management and cross-database logging capabilities.
-            </p>
-
-            <div class="project-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>MySQL</span>
-              <span>MongoDB</span>
-              <span>Redis</span>
-            </div>
-          </div>
           </a>
         </div>
 
-        <div class="col-md-4" data-aos="zoom-in">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <a href="https://github.com/Sunnysaini2003/Project-Management-System--PMS-" target="_blank"
+            rel="noopener noreferrer" class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>WorkSync</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
+
+              <p>
+                End-to-end enterprise workflow platform enabling interactive task assignment matrices, milestone
+                tracking, and granular team management RBAC filters.
+              </p>
+
+              <div class="project-tech">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>EJS</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://github.com/Sunnysaini2003/collabsphere-saas" target="_blank" rel="noopener noreferrer"
+            class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>CollabSphere</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
+
+              <p>
+                A scalable multi-tenant SaaS platform built using high-performance backend architecture with session
+                management and cross-database logging capabilities.
+              </p>
+
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>Redis</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
           <div class="project-card">
-            <h4>EventNexus</h4>
+            <div class="project-card-top">
+              <h4>EventNexus</h4>
+            </div>
 
             <p>
-              College event management system for registration, scheduling and
-              announcements using structured relational databases.
+              College event management system for registration, scheduling, and announcements using structured
+              relational databases.
             </p>
 
             <div class="project-tech">
@@ -272,118 +332,132 @@
           </div>
         </div>
 
-           <div class="col-md-4" data-aos="zoom-in">
-            <a href="https://github.com/Sunnysaini2003/ram-forensics-tool" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-          <div class="project-card">
-            <h4>Ram-Forensics-Tool</h4>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <a href="https://github.com/Sunnysaini2003/ram-forensics-tool" target="_blank" rel="noopener noreferrer"
+            class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>Ram-Forensics-Tool</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
 
-            <p>
-             A cybersecurity-focused tool for analyzing volatile memory (RAM) and detecting suspicious system activity in real time.
-            </p>
+              <p>
+                A cybersecurity-focused tool for analyzing volatile memory (RAM) and detecting suspicious system
+                activity in real time.
+              </p>
 
-            <div class="project-tech">
-              <span>Python</span>
-              <span>Streamlit</span>
-              <span>psutil</span>
-              <span>pandas</span>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>psutil</span>
+                <span>pandas</span>
+              </div>
             </div>
-          </div>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-
-
-  <section id="-projects" class="py-5 text-center">
+  <section id="live-projects" class="section-padding pt-0">
     <div class="container" data-aos="fade-up">
-      <h2><i class="fab fa-wordpress"></i> Wordpress | <i class="fa-brands fa-shopify"></i> Shopify Live Projects</h2>
-      <p class="text-muted">Click on the card to view the live website</p>
-      <div class="row mt-4">
-        <div class="col-md-4 mb-4" data-aos="zoom-in">
-          <a href="https://crestpaints.com/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div class="card h-100 shadow">
-              <div class="card-body">
-                <h4 class="card-title">Crest Paints</h4>
-                <p class="card-text">
-                  Crest Paints WordPress website designed with a modern, vibrant layout to showcase
-                  premium paint products and services.
-                </p>
-                <div class="project-tech">
-                  <span>WordPress</span>
-                </div>
+      <div class="section-header text-center mb-5">
+        <h2><i class="fab fa-wordpress text-primary me-1"></i> WordPress & <i
+            class="fa-brands fa-shopify text-success ms-1 me-1"></i> Shopify Live Projects</h2>
+        <p class="text-muted">Click on any project card to explore the live production website</p>
+      </div>
 
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="50">
+          <a href="https://crestpaints.com/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>Crest Paints</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
+              <p>
+                WordPress website designed with a modern, vibrant layout to showcase premium paint products and
+                services.
+              </p>
+              <div class="project-tech">
+                <span>WordPress</span>
+                <span>Live Production</span>
               </div>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <a href="https://gargeducare.in/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div class="card h-100 shadow">
-              <div class="card-body">
-                <h4 class="card-title">GargEducare</h4>
-                <p class="card-text">
-                  Garg Educare WordPress website crafted with a clean, professional design to highlight educational
-                  services and programs effectively.
-                </p>
-                <div class="project-tech">
-                  <span>WordPress</span>
-                </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://gargeducare.in/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>GargEducare</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
+              <p>
+                Educational platform crafted with a clean, structured layout to highlight academic programs and student
+                services.
+              </p>
+              <div class="project-tech">
+                <span>WordPress</span>
+                <span>Live Production</span>
               </div>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <a href="https://canfinliteracy.ca/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div class="card h-100 shadow">
-              <div class="card-body">
-                <h4 class="card-title">CanFin Literacy</h4>
-                <p class="card-text">
-                  CanFin Literacy WordPress website crafted with a clean, professional design to highlight financial
-                  literacy services and programs effectively.
-                </p>
-                <div class="project-tech">
-                  <span>WordPress</span>
-                </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+          <a href="https://canfinliteracy.ca/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>CanFin Literacy</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
+              <p>
+                Professional Canadian financial literacy portal built to present advisory services and educational
+                resources clearly.
+              </p>
+              <div class="project-tech">
+                <span>WordPress</span>
+                <span>Live Production</span>
               </div>
             </div>
           </a>
         </div>
 
-        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-          <a href="https://pillowpeel.com/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div class="card h-100 shadow">
-              <div class="card-body">
-                <h4 class="card-title">PillowPeel</h4>
-                <p class="card-text">
-                  PillowPeel Shopify website designed with a soft, elegant layout to showcase beauty and skincare
-                  products with a premium feel.
-                </p>
-                <div class="project-tech">
-                  <span>Shopify</span>
-                </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://pillowpeel.com/" target="_blank" rel="noopener noreferrer" class="project-link-wrapper">
+            <div class="project-card">
+              <div class="project-card-top">
+                <h4>PillowPeel</h4>
+                <i class="fas fa-arrow-up-right-from-square project-ext-icon"></i>
+              </div>
+              <p>
+                Direct-to-consumer Shopify storefront designed with an elegant layout to showcase beauty and skincare
+                products.
+              </p>
+              <div class="project-tech">
+                <span>Shopify</span>
+                <span>E-Commerce</span>
               </div>
             </div>
           </a>
         </div>
       </div>
+    </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section-padding bg-light">
+  <section id="experience" class="section-padding bg-soft">
     <div class="container" data-aos="fade-up">
 
-      <h2 class="text-center mb-5">
-        <i class="fas fa-briefcase"></i> Experience
-      </h2>
+      <div class="section-header text-center mb-5">
+        <h2><i class="fas fa-briefcase text-primary me-2"></i>Work Experience</h2>
+        <p class="text-muted">Professional engineering roles and full-lifecycle delivery</p>
+      </div>
 
       <div class="row g-4">
 
-        <!-- Experience 1 -->
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="50">
           <div class="exp-card h-100">
 
             <div class="exp-header">
@@ -392,25 +466,28 @@
             </div>
 
             <p class="company">
-              <i class="fas fa-building"></i> Devologix IT Solutions
+              <i class="fas fa-building me-2 text-primary"></i>Devologix IT Solutions
             </p>
 
             <p class="duration">
-              <i class="fas fa-calendar"></i> Aug 2025 – Present
+              <i class="fas fa-calendar-alt me-2"></i>Aug 2025 – Present
             </p>
 
             <ul>
-              <li>Built secure, end-to-end full-stack applications with Node.js, Express.js, React.js, and MySQL across 3+ core production modules.</li>
-              <li>Architected a custom MERN-based CMS from scratch, eliminating developer manual overhead for configuration by 100%.</li>
-              <li>Designed robust JWT-based REST APIs handling RBAC and integrated a reusable UI component library.</li>
-              <li>Optimized structured MySQL database schemas, dropping API query latency rates by 35% under load.</li>
+              <li>Engineered 3+ full-stack production CMS modules using React.js, Express.js REST APIs, and JWT
+                authentication to manage 200+ live content pieces.</li>
+              <li>Architected a custom enterprise CMS platform from scratch with RBAC, enabling 50+ team members to
+                publish digital assets independently.</li>
+              <li>Developed a modular library of 20+ reusable React components, accelerating frontend feature delivery
+                by 40%.</li>
+              <li>Optimized complex MySQL queries and indexing strategies, cutting API response latency from 2.1s to
+                350ms.</li>
             </ul>
 
           </div>
         </div>
 
-        <!-- Experience 2 -->
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="150">
           <div class="exp-card h-100">
 
             <div class="exp-header">
@@ -418,25 +495,26 @@
             </div>
 
             <p class="company">
-              <i class="fas fa-briefcase"></i> Self-Employed
+              <i class="fas fa-briefcase me-2 text-primary"></i>Self-Employed
             </p>
 
             <p class="duration">
-              <i class="fas fa-calendar"></i> Jul 2024 – Present
+              <i class="fas fa-calendar-alt me-2"></i>Jul 2024 – Present
             </p>
 
             <ul>
-              <li>Engineered and launched 10+ custom client websites from concept to production using WordPress, React, and custom architectures.</li>
-              <li>Integrated secure authentication infrastructure for client platforms.</li>
-              <li>Oversaw end-to-end client engagement and complete SDLC pipelines.</li>
-              <li>Increased user experience scores and site performance by an average of 40% across localized client domains.</li>
+              <li>Spearheaded the end-to-end SDLC for 10+ full-stack client websites using React.js, Node.js, WordPress,
+                and Shopify with a 98% on-time delivery rate.</li>
+              <li>Implemented multi-user authentication pipelines across 8+ production applications utilizing JWT,
+                bcrypt, and role-based session management.</li>
+              <li>Customized and deployed 5+ CMS-driven client platforms, improving page load speeds by 25% and
+                achieving 90%+ client satisfaction.</li>
             </ul>
 
           </div>
         </div>
 
-        <!-- Experience 3 -->
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="250">
           <div class="exp-card h-100">
 
             <div class="exp-header">
@@ -444,18 +522,18 @@
             </div>
 
             <p class="company">
-              <i class="fas fa-building"></i> Devologix IT Solutions
+              <i class="fas fa-building me-2 text-primary"></i>Devologix IT Solutions
             </p>
 
             <p class="duration">
-              <i class="fas fa-calendar"></i> May 2024 – Aug 2025
+              <i class="fas fa-calendar-alt me-2"></i>May 2024 – Aug 2025
             </p>
 
             <ul>
               <li>Built operational mockups and full-stack features using Express.js and MySQL.</li>
               <li>Achieved cross-browser compatibility across internal dashboard layouts.</li>
               <li>Assisted engineering teams in integrating RESTful endpoints and validating data inputs.</li>
-              <li>Standardized frontend components using React.</li>
+              <li>Standardized frontend components using React.js.</li>
             </ul>
 
           </div>
@@ -466,41 +544,39 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section-padding bg-light">
+  <section id="education" class="section-padding">
     <div class="container" data-aos="fade-up">
 
-      <h2 class="text-center mb-5">
-        <i class="fas fa-graduation-cap"></i> Education
-      </h2>
+      <div class="section-header text-center mb-5">
+        <h2><i class="fas fa-graduation-cap text-primary me-2"></i>Education</h2>
+        <p class="text-muted">Academic background in Information Technology & Computer Science</p>
+      </div>
 
       <div class="timeline">
 
-        <!-- B.Tech -->
-        <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
           <div class="timeline-icon">
             <i class="fas fa-university"></i>
           </div>
 
           <div class="timeline-content">
             <h5>B.Tech – Information Technology</h5>
-            <p class="college">Guru Nanak Dev Engineering College, Ludhiana</p>
-            <p class="college">2022 - 2025</p>
-            <span class="badge bg-success">CGPA: 7.05</span>
+            <p class="college mb-1">Guru Nanak Dev Engineering College, Ludhiana</p>
+            <p class="college mb-2">2022 – 2025</p>
+            <span class="edu-badge">CGPA: 7.05</span>
           </div>
         </div>
 
-        <!-- Diploma -->
-        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
           <div class="timeline-icon">
             <i class="fas fa-university"></i>
           </div>
 
           <div class="timeline-content">
             <h5>Diploma – Computer Science Engineering</h5>
-            <p class="college">Guru Nanak Dev Polytechnic College, Ludhiana</p>
-            <p class="college">2019 - 2022</p>
-            <span class="badge bg-success">70%</span>
+            <p class="college mb-1">Guru Nanak Dev Polytechnic College, Ludhiana</p>
+            <p class="college mb-2">2019 – 2022</p>
+            <span class="edu-badge">Score: 70%</span>
           </div>
         </div>
 
@@ -509,98 +585,105 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
-<section id="skills" class="skills text-center">
-  <div class="container">
+  <section id="skills" class="skills text-center">
+    <div class="container">
 
-    <h2 class="mb-5">
-      <i class="fa fa-code"></i> Skills
-    </h2>
-
-    <div class="skills-wrapper">
-      <div class="skills-track">
-
-        <!-- ORIGINAL -->
-        <div class="skill-card"><i class="fab fa-html5"></i><span>&nbsp;HTML</span></div>
-        <div class="skill-card"><i class="fab fa-css3-alt"></i><span>&nbsp;CSS</span></div>
-        <div class="skill-card"><i class="fab fa-js"></i><span>&nbsp;JavaScript</span></div>
-        <div class="skill-card"><i class="fab fa-react"></i><span>&nbsp;React</span></div>
-        <div class="skill-card"><i class="fab fa-node-js"></i><span>&nbsp;Node.js</span></div>
-        <div class="skill-card"><i class="fas fa-database"></i><span>&nbsp;MongoDB</span></div>
-        <div class="skill-card"><i class="fas fa-database"></i><span>&nbsp;MySQL</span></div>
-        <div class="skill-card"><i class="fab fa-bootstrap"></i><span>&nbsp;Bootstrap</span></div>
-        <div class="skill-card"><i class="fab fa-wordpress"></i><span>&nbsp;WordPress</span></div>
-        <div class="skill-card"><i class="fab fa-shopify"></i><span>&nbsp;Shopify</span></div>
-        <div class="skill-card"><i class="fab fa-git-alt"></i><span>&nbsp;Git</span></div>
-
-        <!-- DUPLICATE (for infinite loop) -->
-        <div class="skill-card"><i class="fab fa-html5"></i><span>&nbsp;HTML</span></div>
-        <div class="skill-card"><i class="fab fa-css3-alt"></i><span>&nbsp;CSS</span></div>
-        <div class="skill-card"><i class="fab fa-js"></i><span>&nbsp;JavaScript</span></div>
-        <div class="skill-card"><i class="fab fa-react"></i><span>&nbsp;React</span></div>
-        <div class="skill-card"><i class="fab fa-node-js"></i><span>&nbsp;Node.js</span></div>
-        <div class="skill-card"><i class="fas fa-database"></i><span>&nbsp;MongoDB</span></div>
-        <div class="skill-card"><i class="fas fa-database"></i><span>&nbsp;MySQL</span></div>
-        <div class="skill-card"><i class="fab fa-bootstrap"></i><span>&nbsp;Bootstrap</span></div>
-        <div class="skill-card"><i class="fab fa-wordpress"></i><span>&nbsp;WordPress</span></div>
-        <div class="skill-card"><i class="fab fa-shopify"></i><span>&nbsp;Shopify</span></div>
-        <div class="skill-card"><i class="fab fa-git-alt"></i><span>&nbsp;Git</span></div>
-
+      <div class="section-header mb-5" data-aos="fade-up">
+        <h2><i class="fa fa-code text-primary me-2"></i>Technical Skills</h2>
+        <p class="text-muted">Technologies and tools I work with daily</p>
       </div>
-    </div>
 
-  </div>
-</section>
+      <div class="skills-wrapper">
+        <div class="skills-track">
 
-  <section id="resume" class="py-5 text-center">
-    <br><br>
-    <div class="container" data-aos="fade-up">
-      <h2><i class="fas fa-file-alt"></i> Resume</h2>
-      <p>Download my resume below:</p>
-      <a href="/Resume_.pdf" download class="btn btn-dark resume-btn">
-        <i class="fas fa-download"></i> Download Resume
-      </a>
+          <div class="skill-card"><i class="fab fa-react"></i><span>React.js</span></div>
+          <div class="skill-card"><i class="fas fa-file-code"></i><span>TypeScript</span></div>
+          <div class="skill-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+          <div class="skill-card"><i class="fas fa-server"></i><span>Express.js</span></div>
+          <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+          <div class="skill-card"><i class="fas fa-database"></i><span>MongoDB</span></div>
+          <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="fas fa-bolt"></i><span>Socket.io</span></div>
+          <div class="skill-card"><i class="fas fa-wind"></i><span>Tailwind CSS</span></div>
+          <div class="skill-card"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+          <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill-card"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+          <div class="skill-card"><i class="fab fa-shopify"></i><span>Shopify</span></div>
+          <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+
+          <div class="skill-card"><i class="fab fa-react"></i><span>React.js</span></div>
+          <div class="skill-card"><i class="fas fa-file-code"></i><span>TypeScript</span></div>
+          <div class="skill-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+          <div class="skill-card"><i class="fas fa-server"></i><span>Express.js</span></div>
+          <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+          <div class="skill-card"><i class="fas fa-database"></i><span>MongoDB</span></div>
+          <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="fas fa-bolt"></i><span>Socket.io</span></div>
+          <div class="skill-card"><i class="fas fa-wind"></i><span>Tailwind CSS</span></div>
+          <div class="skill-card"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+          <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+          <div class="skill-card"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+          <div class="skill-card"><i class="fab fa-shopify"></i><span>Shopify</span></div>
+          <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <section id="resume" class="py-5 text-center">
+    <div class="container" data-aos="fade-up">
+      <div class="resume-cta-box">
+        <h2><i class="fas fa-file-alt me-2"></i>Grab a Copy of My Resume</h2>
+        <p class="mb-4">Looking for a quick overview of my engineering experience, tech stack, and projects?</p>
+        <a href="/Resume.pdf" download class="btn resume-btn">
+          <i class="fas fa-download me-2"></i>Download Resume (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="section-padding contact-section">
     <div class="container text-center">
 
-      <h2 class="mb-4">
-        <i class="fa fa-envelope"></i> Get In Touch
-      </h2>
-
-      <p class="text-muted mb-5">
-        Feel free to connect with me for projects, collaborations, or opportunities.
-      </p>
+      <div class="section-header mb-5" data-aos="fade-up">
+        <h2><i class="fa fa-envelope text-primary me-2"></i>Get In Touch</h2>
+        <p class="text-muted">Feel free to connect with me for projects, collaborations, or full-time opportunities.</p>
+      </div>
 
       <div class="row justify-content-center g-4">
 
-        <!-- GitHub -->
-        <div class="col-md-4 col-sm-6">
-          <a href="https://github.com/Sunnysaini2003" target="_blank" class="contact-card">
-            <i class="fab fa-github"></i>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+          <a href="https://github.com/Sunnysaini2003" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon-wrap">
+              <i class="fab fa-github"></i>
+            </div>
             <h5>GitHub</h5>
-            <p>View my projects</p>
+            <p class="mb-0">Explore my repositories & code</p>
           </a>
         </div>
 
-        <!-- LinkedIn -->
-        <div class="col-md-4 col-sm-6">
-          <a href="https://linkedin.com/in/sunny-saini-0087b2301" target="_blank" class="contact-card">
-            <i class="fab fa-linkedin"></i>
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+          <a href="https://linkedin.com/in/sunny-saini-0087b2301" target="_blank" rel="noopener noreferrer"
+            class="contact-card">
+            <div class="contact-icon-wrap">
+              <i class="fab fa-linkedin"></i>
+            </div>
             <h5>LinkedIn</h5>
-            <p>Connect professionally</p>
+            <p class="mb-0">Connect with me professionally</p>
           </a>
         </div>
 
-        <!-- Email -->
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="250">
           <a href="mailto:sunnysaini.ldh@gmail.com" class="contact-card">
-            <i class="fa fa-envelope"></i>
+            <div class="contact-icon-wrap">
+              <i class="fa fa-envelope"></i>
+            </div>
             <h5>Email</h5>
-            <p>Send me a message</p>
+            <p class="mb-0">sunnysaini.ldh@gmail.com</p>
           </a>
         </div>
 
@@ -608,6 +691,7 @@
 
     </div>
   </section>
+
   <footer class="footer">
     <div class="container text-center">
 
@@ -617,43 +701,62 @@
         Full Stack MERN Developer | Building modern web experiences
       </p>
 
-      <!-- Social Icons -->
       <div class="footer-social">
-
-        <a href="https://github.com/Sunnysaini2003" target="_blank">
+        <a href="https://github.com/Sunnysaini2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
 
-        <a href="https://linkedin.com/in/sunny-saini-0087b2301" target="_blank">
+        <a href="https://linkedin.com/in/sunny-saini-0087b2301" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
 
-        <a href="mailto:sunnysaini.ldh@gmail.com">
+        <a href="mailto:sunnysaini.ldh@gmail.com" aria-label="Email">
           <i class="fa fa-envelope"></i>
         </a>
-
       </div>
 
       <hr>
 
-      <p class="footer-copy">
-        © <span id="year"></span><a style="text-decoration: none; color: #aaa;" href="https://sunnysaini2003.github.io"  target="_blank"> Sunny Saini</a>. All Rights Reserved.
+      <p class="footer-copy mb-0">
+        © <span id="year"></span> <a href="https://sunnysaini2003.github.io" target="_blank"
+          rel="noopener noreferrer">Sunny Saini</a>. All Rights Reserved.
       </p>
 
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 750,
+      once: true,
+      offset: 60
+    });
 
     document.getElementById("year").innerText = new Date().getFullYear();
-  </script>
-  <script>
+
+    const nav = document.querySelector(".navbar");
+    const toggler = document.querySelector(".navbar-toggler");
+    const navCollapse = document.getElementById("navbarNav");
+
     window.addEventListener("scroll", function () {
-      const nav = document.querySelector(".navbar");
-      nav.classList.toggle("bg-dark", window.scrollY > 50);
+      nav.classList.toggle("scrolled", window.scrollY > 40);
+    });
+
+    toggler.addEventListener("click", function () {
+      this.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (navCollapse.classList.contains("show")) {
+          bootstrap.Collapse.getInstance(navCollapse).hide();
+          toggler.classList.remove("open");
+        }
+      });
     });
   </script>
 
